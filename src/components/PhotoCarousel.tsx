@@ -122,9 +122,14 @@ export default function PhotoCarousel({
           key={currentIndex}
           className={styles.photoContainer}
           custom={direction}
-          initial={(d: number) => ({ x: `${d * 100}%`, opacity: 0.5 })}
-          animate={{ x: "0%", opacity: 1 }}
-          exit={(d: number) => ({ x: `${d * -100}%`, opacity: 0.5 })}
+          variants={{
+            enter: (d: number) => ({ x: `${d * 100}%`, opacity: 0.5 }),
+            center: { x: "0%", opacity: 1 },
+            exit: (d: number) => ({ x: `${d * -100}%`, opacity: 0.5 }),
+          }}
+          initial="enter"
+          animate="center"
+          exit="exit"
           transition={{ duration: 0.35, ease: [0.32, 0.72, 0, 1] }}
         >
           <CarouselImage photo={photos[currentIndex]} propertyTitle={propertyTitle} />

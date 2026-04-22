@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import type { Property } from "@/types/property";
 import styles from "./PropertyInfo.module.css";
 
@@ -9,7 +9,7 @@ interface PropertyInfoProps {
   isActive: boolean;
 }
 
-const staggerChildren = {
+const staggerChildren: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -17,12 +17,12 @@ const staggerChildren = {
   },
 };
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 16 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: "easeOut" },
+    transition: { duration: 0.5, ease: "easeOut" as const },
   },
 };
 
