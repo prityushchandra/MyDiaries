@@ -1,0 +1,26 @@
+.counter {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 10;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  pointer-events: none;
+}
+
+.current {
+  display: inline-block;
+}
+
+.separator {
+  opacity: 0.4;
+}
+
+.total {
+  opacity: 0.4;
+}

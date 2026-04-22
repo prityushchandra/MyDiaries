@@ -1,0 +1,9 @@
+.container {
+  height: 100vh;
+  height: 100dvh;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+  -webkit-overflow-scrolling: touch;
+  background: #000;
+  overscroll-behavior: contain;
+}

@@ -1,0 +1,92 @@
+.hero {
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg);
+  position: relative;
+  scroll-snap-align: start;
+  gap: 1.4rem;
+  border-radius: 12px;
+  margin: 6px;
+  height: calc(100vh - 12px);
+  height: calc(100dvh - 12px);
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.4rem, 1.5vw, 1rem);
+}
+
+.featherImg {
+  width: clamp(70px, 9vw, 110px);
+  height: auto;
+  filter: invert(1);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+.brand {
+  font-family: var(--font-serif-stack);
+  font-size: clamp(3.5rem, 10vw, 7.5rem);
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  color: var(--color-primary);
+  line-height: 0.9;
+}
+
+.rule {
+  width: clamp(50px, 8vw, 80px);
+  height: 1px;
+  background: var(--color-primary);
+  transform-origin: center;
+  margin: 0.2rem 0;
+}
+
+.tagline {
+  font-family: var(--font-serif-stack);
+  font-size: clamp(1rem, 2.2vw, 1.4rem);
+  color: var(--color-primary);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.values {
+  font-family: var(--font-sans-stack);
+  font-size: clamp(0.8rem, 1.4vw, 1rem);
+  color: var(--color-primary);
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 0.3rem;
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.scrollText {
+  font-family: var(--font-sans-stack);
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.scrollLine {
+  width: 1px;
+  height: 32px;
+  background: var(--color-secondary);
+  transform-origin: top;
+}

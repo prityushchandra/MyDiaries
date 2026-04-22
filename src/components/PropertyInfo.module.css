@@ -1,0 +1,42 @@
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 2rem 2.5rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  font-size: clamp(0.65rem, 1vw, 0.75rem);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.5rem;
+  order: -1;
+}
+
+.title {
+  font-family: var(--font-serif-stack);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
+
+.details {
+  font-size: clamp(0.75rem, 1.2vw, 0.9rem);
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.05em;
+}
+
+.tagline {
+  font-size: clamp(0.8rem, 1.2vw, 0.95rem);
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+  margin-top: 0.75rem;
+  line-height: 1.5;
+}
